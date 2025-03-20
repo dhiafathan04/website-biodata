@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.data img {
+    height: 200px;
+    width: 200px;
+    margin: 50px 20px 50px 50px;
+}
+
+.teks {
+    flex: 1;
+    display: flex;
+}
+
+.teks table {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+.deskripsi {
+    flex-direction: column;
+}
+
+.isi {
+    display: flex;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: column;
+}
+
+.medsos {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.medsos img {
+    width: 50px;
+    height: 50px;
+}
+
+a:hover img {
+    border-bottom: 3px solid white;
+} 
+
+
+/* BIAR KELIATAN RAPI KALO DI HP */
+
+@media (max-width: 768px) {
+    .data, .isi, .medsos {
+        width: 100%;  
+        height: auto;  
+        padding: 10px;  
+    }
+
+    .data {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .data img {
+        margin: 10px 0; 
+        width: 150px;  
+        height: 150px;
+    }
+
+    .teks p {
+        font-size: 20px; 
+    }
+
+    .medsos {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .medsos img {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0; 
+    }
+}
